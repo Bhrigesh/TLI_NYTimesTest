@@ -21,6 +21,20 @@ class TLI_NYTimesTestTests: XCTestCase {
         super.tearDown()
     }
     
+    func testNewsModelInitilazationPass() {
+        
+        let date = "2018/07/09"
+        let news = News(newsTitle: "HelloTitle", newsImageUrl: URL(string: "https://www.nytimes.com/")!, newsDate: date, newsAuthor: "auther", newsContent: "content", id: 20)
+        XCTAssertNotNil(news)
+    }
+    
+    func testNewsModelInitilazationFail() {
+        
+        let date = ""
+        let news = News(newsTitle: "HelloTitle", newsImageUrl: URL(string: "https://www.nytimes.com/")!, newsDate: date, newsAuthor: "auther", newsContent: "content", id: 20)
+        XCTAssertNotNil(news)
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
