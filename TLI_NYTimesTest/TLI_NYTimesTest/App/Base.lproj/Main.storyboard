@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N78-Oc-uqX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--NY Times Most Popular-->
+        <scene sceneID="7yi-Sp-tMZ">
+            <objects>
+                <tableViewController id="pKS-Zp-CU1" customClass="NewsListTableViewController" customModule="TLI_NYTimesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="HoG-6p-lHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="140" id="UAN-8M-0gu" customClass="NewsListTableViewCell" customModule="TLI_NYTimesTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="UAN-8M-0gu" id="xA6-5d-Qps">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="139"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="jGD-nA-mdZ">
+                                            <rect key="frame" x="12" y="32.5" width="75" height="75"/>
+                                            <color key="backgroundColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="Mdt-Vl-X0S"/>
+                                                <constraint firstAttribute="height" constant="75" id="xnY-rJ-a9r"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18j-fG-3d2">
+                                            <rect key="frame" x="94" y="11" width="248" height="58"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ad-Yw-veB">
+                                            <rect key="frame" x="94" y="66" width="248" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-iC-Ssu">
+                                            <rect key="frame" x="281" y="115" width="16" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="0GY-ge-xOm"/>
+                                                <constraint firstAttribute="width" constant="16" id="X2G-t4-6fS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc5-MB-a39">
+                                            <rect key="frame" x="305" y="113" width="37" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="eR7-ZX-FuD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="18j-fG-3d2" secondAttribute="trailing" id="2jA-dF-w7G"/>
+                                        <constraint firstItem="Lc5-MB-a39" firstAttribute="leading" secondItem="Oxh-iC-Ssu" secondAttribute="trailing" constant="8" id="8Z8-dv-cDd"/>
+                                        <constraint firstItem="jGD-nA-mdZ" firstAttribute="centerY" secondItem="xA6-5d-Qps" secondAttribute="centerY" id="9nP-tg-dj9"/>
+                                        <constraint firstItem="0ad-Yw-veB" firstAttribute="top" secondItem="xA6-5d-Qps" secondAttribute="top" constant="66" id="BeD-wi-GGR"/>
+                                        <constraint firstItem="jGD-nA-mdZ" firstAttribute="leading" secondItem="xA6-5d-Qps" secondAttribute="leading" constant="12" id="BxN-x2-EBU"/>
+                                        <constraint firstAttribute="trailing" secondItem="0ad-Yw-veB" secondAttribute="trailing" id="GWz-ob-koA"/>
+                                        <constraint firstItem="0ad-Yw-veB" firstAttribute="leading" secondItem="jGD-nA-mdZ" secondAttribute="trailing" constant="7" id="S4J-EN-tW7"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lc5-MB-a39" secondAttribute="trailing" id="W0G-Fb-0EH"/>
+                                        <constraint firstAttribute="bottom" secondItem="Oxh-iC-Ssu" secondAttribute="bottom" constant="8" id="hTS-H4-ly3"/>
+                                        <constraint firstItem="Lc5-MB-a39" firstAttribute="top" secondItem="18j-fG-3d2" secondAttribute="bottom" constant="44" id="haF-xe-Z7O"/>
+                                        <constraint firstItem="18j-fG-3d2" firstAttribute="top" secondItem="xA6-5d-Qps" secondAttribute="top" constant="11" id="nFK-CR-xcx"/>
+                                        <constraint firstAttribute="bottom" secondItem="Lc5-MB-a39" secondAttribute="bottom" constant="5" id="u7K-r1-dHX"/>
+                                        <constraint firstItem="18j-fG-3d2" firstAttribute="leading" secondItem="jGD-nA-mdZ" secondAttribute="trailing" constant="7" id="v9n-b1-JxD"/>
+                                        <constraint firstItem="Lc5-MB-a39" firstAttribute="leading" secondItem="Oxh-iC-Ssu" secondAttribute="trailing" constant="8" id="wAQ-te-Ggb"/>
+                                        <constraint firstItem="0ad-Yw-veB" firstAttribute="leading" secondItem="jGD-nA-mdZ" secondAttribute="trailing" constant="7" id="wCv-kP-PnJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="0ad-Yw-veB" secondAttribute="bottom" constant="20" id="yaL-up-4uJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLabel" destination="0ad-Yw-veB" id="4qd-Yj-Eil"/>
+                                    <outlet property="dateLabel" destination="Lc5-MB-a39" id="qGp-nG-14e"/>
+                                    <outlet property="newsImageView" destination="jGD-nA-mdZ" id="8Kv-vs-LD4"/>
+                                    <outlet property="titleLabel" destination="18j-fG-3d2" id="1S3-FN-XhE"/>
+                                    <segue destination="gAr-rl-vnY" kind="show" identifier="newsDetail" id="3JU-BS-e2i"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pKS-Zp-CU1" id="9u5-fK-GvK"/>
+                            <outlet property="delegate" destination="pKS-Zp-CU1" id="RIm-8q-onW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NY Times Most Popular" id="Hss-aP-tyA">
+                        <barButtonItem key="backBarButtonItem" title="back" id="SbJ-Kw-B7r"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdG-26-MsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Detail News View Controller-->
+        <scene sceneID="eid-lX-e5K">
+            <objects>
+                <tableViewController id="gAr-rl-vnY" customClass="DetailNewsViewController" customModule="TLI_NYTimesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7fe-h0-sQf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="S8r-Gl-xo5">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="605" id="xDw-oP-9QF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="xDw-oP-9QF" id="CpU-ep-fWw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="e6P-Ka-w21">
+                                                    <rect key="frame" x="16" y="11" width="343" height="237"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-wb-vvU">
+                                                    <rect key="frame" x="16" y="310" width="343" height="284"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detailed News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRM-Oe-1m1">
+                                                    <rect key="frame" x="16" y="281" width="111" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="gAr-rl-vnY" id="hyn-5x-Wgx"/>
+                            <outlet property="delegate" destination="gAr-rl-vnY" id="C8D-f3-nBz"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="detailNewsLabel" destination="gLf-wb-vvU" id="vFl-lr-rTh"/>
+                        <outlet property="newImage" destination="e6P-Ka-w21" id="rh2-tA-kk5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ki1-Uq-o1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yoh-Qy-UN3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N78-Oc-uqX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gVw-5B-aHa">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.098039215690000001" green="0.6588235294" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pKS-Zp-CU1" kind="relationship" relationship="rootViewController" id="eHG-tb-29u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prg-3C-9Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-905" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Placeholder" width="48" height="48"/>
+        <image name="calender" width="36" height="36"/>
+    </resources>
+</document>
